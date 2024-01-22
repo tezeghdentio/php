@@ -26,14 +26,10 @@ for($i=0;$i<$nb;$i++)
         $enreg=mysqli_fetch_array($res);
 ?>
 <option value="<?php echo $enreg[2]; ?>"><?php echo $enreg[1]." ".$enreg[0]; ?></option>
-
 <?php
-
-    }
-    
+}
 ?>
 </select>
 <input type="button" onClick="supprimer()" value="Supprimer">
 <input type="button" value="Retrouver Email" onclick="verif()">
-
 </form>
