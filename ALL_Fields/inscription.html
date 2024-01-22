@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="fonctions.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="ajout.php" method="post" name="f1">
+            Login: <input type="text" name="login" id="login"> <br>
+            Mot de passe: <input type="password" name="passwd" id="passwd"> <br>
+            Nom: <input type="text" name="nom" id="nom"> <br>
+            Prénom: <input type="text" name="prenom" id="prenom" value="Oussama"> <br>
+            Date de Naissance: <input type="date" name="date_naiss" id="date_naiss"> <br>
+            Heure: <input type="time" name="heure" id="heure"> <br>
+            Email: <input type="email" name="mail" id="mail" placeholder="tezeghdenti@gmail.com"> <br>
+            <fieldset>
+                <legend>Sexe :</legend>
+                <input type="radio" name="sexe" id="homme" checked  value="H">Homme
+                <input type="radio" name="sexe" id="femme" value="F">Femme
+            </fieldset>
+            <br>
+            Sports:
+            <input type="checkbox" name="foot" id="foot" value="O">Football
+            <input type="checkbox" name="hand" id="hand" value="O">Handball
+            <input type="checkbox" name="tennis" id="tennis" value="O">Tennis
+<br>
+<select name="pays" id="pays">
+<option>Veuillez choisir un pays SVP</option>
+<option value="TN">Tunisie</option>
+<option value="AL">Algérie</option>
+<option value="LY">Lybie</option>
+</select>
+<br>
+Pays de résidence:
+<input list="pays1" name="pays1">
+    <datalist id="pays1">
+    <option value="Tunisie">
+    <option value="Algérie">
+    <option value="Lybie">
+       
+    </datalist><br>
+    Remarques:
+    <br>
+    <textarea name="remarques" id="remarques" cols="30" rows="10"></textarea>
+  <br>
+  <input type="button" value="mon bouton" onclick="verif()">
+  <input type="submit" value="Envoyer">
+  <input type="reset" value="Reinitialiser">
+</form>
+    </body>
+</html>

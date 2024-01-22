@@ -4,7 +4,7 @@ $login=$_POST["login"];
 $passwd=$_POST["passwd"];
 
 // L' instruction require prend tout le texte/code/balisage qui existe dans le fichier spécifié et le copie dans le fichier qui utilise l'instruction include.
-require("config.php");
+require("../config.php");
 //La fonction connect() / mysqli_connect() ouvre une nouvelle connexion au serveur MySQL.
 $conn=mysqli_connect($server,$username,$password,$db) or die ("Probleme de connxion au serveur ou à la base de données");
 // Construction de la requete
